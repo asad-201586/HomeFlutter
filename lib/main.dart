@@ -6,6 +6,7 @@ import 'package:home_flutter/practice_list.dart';
 import 'package:home_flutter/rowAndColumn.dart';
 
 import 'my_widgets/bottomnavbar.dart';
+import 'my_widgets/code_reuse.dart';
 
 void main() => runApp(const MyApp());
 
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "Home",
-      home: MyBottomNavBar(),
+      home: CodeReUse(),
       debugShowCheckedModeBanner: false,
     );
   }
