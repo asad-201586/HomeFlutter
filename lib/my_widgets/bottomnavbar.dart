@@ -26,11 +26,12 @@ class MyBottomNavBar extends StatelessWidget {
         padding: EdgeInsets.only(bottom: 10),
         shape: CircularNotchedRectangle(),
         child: Row(
-          children: <Widget>[
+          mainAxisSize: MainAxisSize.max,
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: [
             IconButton(onPressed: (){}, icon: Icon(Icons.menu,color: Colors.white,)),
-            IconButton(onPressed: (){}, icon: Icon(Icons.home,color: Colors.white,)),
-            const Spacer(),
-            IconButton(onPressed: (){}, icon: Icon(Icons.search,color: Colors.white,)),
+            Padding(padding: EdgeInsets.only(right: 40),child: IconButton(onPressed: (){}, icon: Icon(Icons.home,color: Colors.white,))),
+            Padding(padding: EdgeInsets.only(left: 40),child: IconButton(onPressed: (){}, icon: Icon(Icons.search,color: Colors.white,))),
             IconButton(onPressed: (){}, icon: Icon(Icons.shopping_cart,color: Colors.white,)),
           ],
         ),
