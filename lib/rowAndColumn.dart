@@ -21,10 +21,11 @@ class RowAndColumn extends StatelessWidget {
             Row(
               children: [
                 Expanded(child: Image(image: AssetImage("assets/rain.jpg"))),
-                Expanded(flex: 2,child: Image(image: AssetImage("assets/rain.jpg"))),
+                Expanded(child: Image(image: AssetImage("assets/rain.jpg"))),
                 Expanded(child: Image(image: AssetImage("assets/rain.jpg"))),
               ],
             ),
+            const Padding(padding: EdgeInsets.only(top: 20)),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -35,6 +36,7 @@ class RowAndColumn extends StatelessWidget {
                 Icon(Icons.star_border,size: 25,),
               ],
             ),
+            const Padding(padding: EdgeInsets.only(bottom: 20)),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
