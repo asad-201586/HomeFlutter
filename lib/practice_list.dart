@@ -8,6 +8,10 @@ class MyListData extends StatelessWidget {
   List<String> products = ["Computer", "Mobile", "Refrigertor","Washing Machine","Monitor","Laptop"];
   List<String> descList = ["Super computer","Digital smartphone","Latest refrigerator","Super washing machine","ViewSonic VA24","HP Pavilion"];
 
+  void _goToCustomListTile(context) {
+    Navigator.of(context).pushNamed('/rowAndColumn');
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,7 +24,7 @@ class MyListData extends StatelessWidget {
           itemCount: products.length,
           itemBuilder: (context, index) {
             return InkWell(
-              onTap: (){},
+              onTap: (){_goToCustomListTile(context);},
               child: Container(
                 padding: const EdgeInsets.all(16),
                 margin: const EdgeInsets.symmetric(vertical: 8,horizontal: 16),

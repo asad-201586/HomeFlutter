@@ -40,7 +40,7 @@ class RowAndColumn extends StatelessWidget {
               children: [
                 Column(
                   children: [
-                    Icon(Icons.phone,size: 35,),
+                    IconButton(onPressed: (){Navigator.of(context).pop();}, icon: Icon(Icons.phone),iconSize: 35,),
                     Text("Phone")
                   ],
                 ),
